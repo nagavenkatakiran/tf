@@ -5,4 +5,9 @@ resource "aws_instance" "my-test-instance" {
   tags {
     Name = "test-instance"
   }
+  
+  provisioner "local-exec" {
+
+      command = "echo ${aws_instance.web.public_ip} >> /home/ubuntu/ip/ip.txt"
+}
 }
