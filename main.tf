@@ -1,9 +1,9 @@
-resource "aws_instance" "my-test-instance3" {
+resource "aws_instance" "my-test-instance" {
   ami             = "${data.aws_ami.ubuntu.id}"
   instance_type   = "t2.micro"
 
   tags {
-    Name = "test-instance"
+    Name = "test-instance3"
   }
   
   provisioner "local-exec" {
