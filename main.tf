@@ -5,7 +5,7 @@ resource "aws_instance" "my-test-instance" {
  
  
   tags {
-    Name = "Dec26"
+    Name = "Dec27"
   }
   
   
